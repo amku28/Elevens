@@ -1,5 +1,6 @@
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * The Deck class represents a shuffled deck of cards.
@@ -62,7 +63,14 @@ public class Deck {
 	 * and reset the size to represent the entire deck.
 	 */
 	public void shuffle() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */
+		for (int k = size; k > 0; k--) {
+			int r = (int) (Math.random() * k + 1);
+			Card temp = cards.get(k - 1);
+			cards.set(k - 1, cards.get(r - 1));
+			cards.set(r - 1, temp);
+		}
+
+		size = cards.size();
 	}
 
 	/**
