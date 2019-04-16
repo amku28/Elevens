@@ -1,0 +1,4 @@
+1. Similarities - cards are selected to add up to the determined value and replaced with cards in the deck. You win when the deck is empty or lose when there are no other possibilities on the board. 
+Differences - face cards are removed differently in each of the games. The amount of cards on the board are different. The values of cards are slightly different as well.
+2. Polymorphism is used by calling super()
+3. isLegal(), anotherPlayIsPossible(), No because each game has a different way of playing therefore a legal move on one game may not be a legal move on another, this applies to having possible plays as well.
