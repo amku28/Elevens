@@ -1,0 +1,3 @@
+1. Size isn't an abstract method because size returns the size of the board constructed in the game, which is however many cards on the board. The size could vary from 0 to the maximum amount of cards possible on the board according to the game therefore the size just returns whatever integer is on the board.
+2. Because in each game, cards are removed and replaced the same way, such that the player identifies cards that are within the confines of the rules and replaces chosen cards. Now the rules are then abstract methods such as the isLegal method that determine if chosen cards can be replaced.
+3. Yes the two methods would be able to be called polymorphically because an interface works the same as a java class. 
